@@ -1,0 +1,9 @@
+$_SESSION['login_user']		school code
+$_SESSION['login_shname']	school name
+$_SESSION['login_class']	class
+$_SESSION['login_name']		teacher name
+$_SESSION['login_menu']         current menu
+$_SESSION['login_stroll']	student rollno
+$_SESSION['login_stname']	student name
+
+

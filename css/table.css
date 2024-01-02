@@ -1,0 +1,51 @@
+
+	.design1
+	{
+	border-collapse:collapse;
+	}
+
+	table.design1 td, tr
+	{	
+	border:1px solid #736F6E;
+	}
+
+
+	.tblhd
+	{
+	 text-align:center;
+	 background:#D1D0CE;
+         	 color:#000000;
+	}
+
+	.tblrw1
+	{
+	 text-align:center;
+	 background:#76FER1;
+ 	 font-family:Arial;
+         	 font-color:#565656;
+	}
+	.tblrw2
+	{
+	 text-align:center;
+	 background:#F5F5F5;
+ 	 font-family:Arial;
+        	 font-color:#565656;
+	}
+
+	.tblrw1:hover { background-color:#BDEDFF; } 
+	.tblrw2:hover { background-color:#BDEDFF; } 
+
+
+
+
+
+	.design2
+	{
+	border-collapse:collapse;
+	}
+
+	table.design2 td, tr
+	{	
+	border: 1px solid #98AFC7;
+	padding: 5px;
+	}

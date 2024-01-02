@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="UTF-8">
+    <title>Example - images</title>
+    <link rel="stylesheet" href="form.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script language="javascript" type="text/javascript">
+
+var j = 2;
+$(function() {
+  enable_cb();
+  $("#ckgroup2").click(enable_cb);
+});
+
+
+function enable_cb() {
+  if (this.checked) {
+    $("input.grp1").removeAttr("disabled");
+    for (i = 1; i <= 5; i++) { 
+	$( "table tr:nth-child(" + i + ") td:nth-child(" + j + ")" ).css("background-color", "#D1D0CE");
+    }
+
+  } else {
+    $("input.grp1").attr("disabled",true);
+    for (i = 1; i <= 5; i++) { 
+	$( "table tr:nth-child(" + i + ") td:nth-child(" + j + ")" ).css("background-color", "#E5E4E2");
+    }
+  }
+}
+
+</script>
+</head>
+<body bgcolor="#ffffff">
+<br><br><br><br>
+<center>
+<table>
+<tr><td>
+<span>Name</span>
+</td><td>
+<input type="checkbox" id="ckgroup2" class="one1" /><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="ckgroup3"  class="one1" /><label for="checkbox3">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="ckgroup4"  class="one1" /><label for="checkbox4">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="ckgroup5"  class="one1" /><label for="checkbox5">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="ckgroup6"  class="one1" /><label for="checkbox6">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="ckgroup7"  class="one1" /><label for="checkbox7">&nbsp;</label>
+</td>
+</tr>
+
+
+<tr><td>
+<span>Selvakumar Paramasivan</span>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked" class="grp1"/><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"/><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"/><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"/><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"/><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"/><label for="checkbox2">&nbsp;</label>
+</td>
+</tr>
+
+<tr><td>
+<span>Selvakumar Paramasivan</span>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"  class="grp1"/><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked" /><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"/><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"/><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"/><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"/><label for="checkbox2">&nbsp;</label>
+</td>
+</tr>
+<tr><td>
+<span>Selvakumar Paramasivan</span>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"  class="grp1"/><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"/><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"/><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"/><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"/><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"/><label for="checkbox2">&nbsp;</label>
+</td>
+</tr>
+<tr><td>
+<span>Selvakumar Paramasivan</span>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"  class="grp1"/><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"/><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"/><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"/><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"/><label for="checkbox2">&nbsp;</label>
+</td><td>
+<input type="checkbox" id="checkbox2" checked="checked"/><label for="checkbox2">&nbsp;</label>
+</td>
+</tr>
+</table>
+
+
+  </body>
+</html>

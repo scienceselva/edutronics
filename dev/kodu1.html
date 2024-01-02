@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head>  
+<title>Home page</title>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+
+<style type="text/css">
+
+body {   
+	background: #E5E4E2;   
+	font-family: Arial, sans-serif; 
+	font-size: 14px;  
+}   
+
+.tick{
+	background   : url('attcode.png') no-repeat 0 0;
+	background-position: 0 0; 
+	width:25px; height:25px;
+}
+
+.abscent{
+	background   : url('attcode.png') no-repeat 0 0;
+	background-position: 0 -25px; 
+	width:25px; height:25px;
+}
+
+.leave{
+	background   : url('attcode.png') no-repeat 0 0;
+	background-position: 0 -50px; 
+	width:25px; height:25px;
+}
+
+.noentry{
+	background   : url('attcode.png') no-repeat 0 0;
+	background-position: 0 -75px; 
+	width:25px; height:25px;
+}
+
+
+.tick1{
+	background   : url('attcode1.png') no-repeat 0 0;
+	background-position: 0 0; 
+	width:25px; height:25px;
+	text-align:center;
+}
+
+.abscent1{
+	background   : url('attcode1.png') no-repeat 0 0;
+	background-position: 0 -25px; 
+	width:25px; height:25px;
+}
+
+.leave1{
+	background   : url('attcode1.png') no-repeat 0 0;
+	background-position: 0 -50px; 
+	width:25px; height:25px;
+}
+
+.noentry1{
+	background   : url('attcode1.png') no-repeat 0 0;
+	background-position: 0 -75px; 
+	width:25px; height:25px;
+}
+
+
+
+
+
+	table
+	{
+	border-collapse:collapse;
+	}
+	table, td, th
+	{
+	border:1px solid #ADDFFF;
+	}
+
+	.tblhd
+	{
+	 text-align:center;
+	 background:#c0c0c0;
+ 	 font-family:Arial;
+         color:#2B65EC;
+  	 font-weight:bold;
+	}
+
+	.tblrw1
+	{
+	 text-align:center;
+	 background:#76FER1;
+ 	 font-family:Arial;
+         font-color:#565656;
+	}
+	.tblrw2
+	{
+	 text-align:center;
+	 background:#F5F5F5;
+ 	 font-family:Arial;
+         font-color:#565656;
+	}
+
+	.tblrw1:hover { background-color:#BDEDFF; } 
+	.tblrw2:hover { background-color:#BDEDFF; } 
+</style>
+
+
+<script type="text/javascript"> 
+
+ function cSwap(cell,ro,rm)
+ {
+    if (cell.className == "tick") {
+       cell.className = "leave"; 
+
+    }
+    else if (cell.className == "leave") {
+       cell.className = "abscent"; 
+    }
+    else if (cell.className == "abscent") {
+       cell.className = "tick"; 
+    }else{
+       cell.className = "tick";
+    }
+ }
+
+</script>
+
+</head>  
+<body>
+<center>
+
+<table>
+<tr>
+<td class="tick"   ></td><td>Present</td>
+<td class="leave"  ></td><td>Leave</td>
+<td class="abscent"></td><td>Abscent</td>
+<td class="noentry"></td><td>No entry</td>
+</tr>
+</table>
+
+<br><br><br>
+
+<table>
+<tr>
+<td>English</td>
+<td>Tamil</td>
+<td>Social Science</td>
+<td>Lab practival data structures</td>
+</tr>
+
+<tr>
+<td class="tick" onclick='cSwap(this,1,1)'></td>
+<td class="leave" onclick='cSwap(this,1,2)'></td>
+<td class="abscent" onclick='cSwap(this,1,3)'></td>
+<td class="noentry"  onclick='cSwap(this,1,4)'></td>
+</tr>
+
+<tr>
+<td class="tick" onclick='cSwap(this,2,1)'></td>
+<td class="leave" onclick='cSwap(this,2,2)'></td>
+<td class="abscent" onclick='cSwap(this,2,3)'></td>
+<td class="noentry"  onclick='cSwap(this,2,4)'></td>
+</tr>
+
+<tr>
+<td class="tick" onclick='cSwap(this,3,1)'></td>
+<td class="leave" onclick='cSwap(this,3,2)'></td>
+<td class="abscent" onclick='cSwap(this,3,3)'></td>
+<td class="noentry"  onclick='cSwap(this,3,4)'></td>
+</tr>
+
+<tr>
+<td class="tick" onclick='cSwap(this,4,1)'></td>
+<td class="leave" onclick='cSwap(this,4,2)'></td>
+<td class="abscent" onclick='cSwap(this,4,3)'></td>
+<td class="noentry"  onclick='cSwap(this,4,4)'></td>
+</tr>
+
+</table>
+
+
+
+<table class="design1">
+
+<tr class="tblhd">
+<td>S.No.</td>
+<td>Name</td>
+
+<td>S 1 **</td><td>S 2 **</td><td>S 3 **</td><td>S 4 **</td><td>S 5 **</td><td>S 6 **</td><td>S 7 **</td><td>S 8 **</td>
+</tr>
+
+
+
+
+<tr><td>1</td><td>Selvakumar</td><td class="tick" onclick="cSwap(this,1,1)"></td><td class="tick" onclick="cSwap(this,1,1)"></td><td class="tick" onclick="cSwap(this,1,1)"></td><td class="tick" onclick="cSwap(this,1,1)"></td><td class="tick" onclick="cSwap(this,1,1)"></td><td class="tick" onclick="cSwap(this,1,1)"></td><td class="tick" onclick="cSwap(this,1,1)"></td><td class="tick" onclick="cSwap(this,1,1)"></td></tr><tr><td>2</td><td>Paramasivan</td><td class="tick" onclick="cSwap(this,1,1)"></td><td class="tick" onclick="cSwap(this,1,1)"></td><td class="tick" onclick="cSwap(this,1,1)"></td><td class="tick" onclick="cSwap(this,1,1)"></td><td class="tick" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td></tr><tr><td>3</td><td>Anish</td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td></tr><tr><td>4</td><td>Andiappan</td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td></tr><tr><td>7</td><td>Pandi</td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td></tr><tr><td>44</td><td>supri devan . P</td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td><td class="noentry" onclick="cSwap(this,1,1)"></td></tr>
+
+
+</table>
+</body>  
+</html>

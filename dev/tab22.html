@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head>  
+<title>Home page</title>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+
+<script type="text/javascript"> 
+	function showq() { 
+		document.getElementById('menu33').style.display='block'; 
+	}
+	function hideq() { 
+		document.getElementById('menu33').style.display='none'; 
+	}
+
+	function showw() { 
+		document.getElementById('menu22').style.display='block'; 
+	}
+	function hidew() { 
+		document.getElementById('menu22').style.display='none'; 
+	}
+</script>
+
+
+
+<style type="text/css">
+
+body {   
+background: #E5E4E2;   
+font-family: Arial, sans-serif; 
+font-size: 14px;  
+}   
+  
+.widget {   
+margin: 1px;   
+padding: 20px;   
+background: #E5E4E2;   
+border: none;   
+}   
+  
+.widget a {   
+color: #222;   
+text-decoration: none;   
+}   
+  
+.widget a:hover {   
+color: #009;   
+text-decoration: underline;   
+}   
+  
+.tabnav li {   
+display: inline;   
+list-style: none;   
+padding-right: 5px;  
+}   
+  
+.tabnav li a {   
+text-decoration: none;   
+color: #222;   
+font-weight: bold;   
+padding: 4px 6px;   
+outline: none;   
+border: 1px solid #B6B6B4; 
+background: #F0F8FF;
+}   
+  
+.tabnav li a:hover, .tabnav li a:active, .tabnav li.ui-tabs-selected a {   
+background: #ADDFFF;   
+color: #222;   
+text-decoration: none;   
+border: 1px solid #82CAFF; 
+}   
+  
+.tabdiv {   
+margin-top: 2px;   
+background: #D1D0CE;   
+border: 1px solid #B6B6B4;   
+padding: 5px;   
+}   
+  
+.tabdiv li {   
+text-decoration: none; 
+margin-left: 20px;   
+}   
+  
+.ui-tabs-hide {   
+display: none;   
+}
+
+.innerdiv{
+background: #ADDFFF;   
+color: #222;   
+text-decoration: none;  
+display:none; 
+}
+</style>
+
+</head>  
+<body>
+<center>
+<div id="tabmain" class="widget">  
+  
+  <ul class="tabnav">  
+    <li><a href="#todayen">Today's Entry</a></li>  
+    <li><a href="#entrypf">Edit Entry</a></li>  
+    <li><a href="#editpf">Edit Profile</a></li>  
+    <li><a href="#addpf">Add Profile</a></li> 
+  </ul>  
+  
+  <div id="todayen" class="tabdiv">  
+
+
+test1<br>
+test2<br>
+test3<br>
+test4<br>
+test5<br>
+test6<br>
+test7<br>
+test8<br>
+
+   </div>   
+  
+   <div id="entrypf" class="tabdiv">  
+	Date :<input type="date" name="bday"> dd/mm/yyyy  <button type="button" name="postedit" onclick="return showw();">Edit Entries</button>
+		<div id="menu22" class="innerdiv"> 
+			<br><br><br><br>
+		</div>
+   </div> 
+  
+   <div id="editpf" class="tabdiv">  
+
+    <form>
+	<br>
+	<input type="text" name="edit_sno" value="S.No."> 
+	<input type="text" name="edit_name" value="Name"> 
+	<button type="button" name="postedit" onclick="return showq();">Edit</button>
+    </form>
+		<div id="menu33" class="innerdiv"> 
+			<form>
+			<br>
+			<input type="text" name="edit_sno" value="S.No."> <br>
+			<input type="text" name="edit_name" value="Name"> <br> 
+			<input type="text" name="class_name" value="Batch"> <br>
+			<button type="button" name="postedit" onclick="return hideq();">Update</button>
+    			</form>
+		</div>
+  </div>
+
+  <div id="addpf" class="tabdiv">  
+   <form>
+	<br>
+	<input type="text" name="add_sno" value="S.No."> <br><br>
+	<input type="text" name="add_name" value="Name"> <br><br>
+	<button type="submit" name="postadd">Add</button>
+   </form>
+  </div>  
+  
+</div>
+
+
+
+<script src="http://jqueryjs.googlecode.com/files/jquery-1.2.6.min.js"></script>
+<script src="http://wii360link.googlecode.com/files/jquery-ui-personalized-1.5.2.packed.js"></script>
+<script>
+$(document).ready(function() {   
+    $('#tabmain > ul').tabs({ fx: { height: 'toggle', opacity: 'toggle' } });   
+}); 
+</script>	
+</body>  
+</html>
